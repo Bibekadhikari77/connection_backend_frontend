@@ -1,0 +1,29 @@
+types of http codes 
+1. Information responses (100-199)
+2.successful responses(200-299)
+3.Redirection messages(300-399)
+4.Client error responses(400-499)
+5. Server error responses(500-599)
+
+
+
+code -200 meaning = ok when to use: standard response when a request is successful. example: a user submits a form and the server processes it successfully
+code -201 meaning = created when to use: when a resource is created. example: a user creates a new
+account and the server creates a new resource for it
+code -204 meaning = no content when to use: when a request is successful but there is no
+content to return. example: a user deletes a resource and the server returns no content
+code -400 meaning = bad request when to use: when a client sends an invalid request. example: a user
+requests a resource with an invalid id
+code -401 meaning = unauthorized when to use: when a client is not authenticated or does not hav
+e permission to access a resource. example: a user tries to access a protected resource without
+authentication
+code -402 meaning = payment required when to use: when a client needs to make a payment to access a resourc
+e. example: a user tries to access a premium resource without making a payment
+code -403 meaning = forbidden when to use: when a client does not have permission to access a
+resource. example: a user tries to access a resource that is restricted to administrators
+code -404 meaning = not found when to use: when a client requests a resource that does not
+exist. example: a user requests a resource with an invalid id
+code -500 meaning = internal server error when to use: when a server encounters an unexpected
+code -502 meaning = bad gateway when to use: when a server receives an invalid response from another server
+code -503 meaning = service unavailable when to use: when a server is temporarily unavailable. example: a server is
+under maintenance
